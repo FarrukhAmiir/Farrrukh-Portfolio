@@ -232,14 +232,41 @@ footer {
   height: 100%;
   object-fit: contain; /* ensures entire logo fits */
 }
-.hero-links {
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 25px;
-  margin-top: 25px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
+.hero-links {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  gap: 20px;               /* spacing between icons */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.platform:hover {
+  color: #ffeb3b; /* hover color */
+}
+
+/* Circular icon wrapper for Fiverr & Upwork */
 .icon-wrapper {
   display: inline-flex;
   align-items: center;
@@ -250,30 +277,19 @@ footer {
   overflow: hidden;
 }
 
+/* Fiverr green circle */
 .icon-wrapper.fiverr {
-  background-color: #1dbf73; /* Fiverr green circle */
+  background-color: #1dbf73;
 }
 
+/* Upwork green circle */
 .icon-wrapper.upwork {
-  background-color: #6fda44; /* Upwork green circle */
+  background-color: #6fda44;
 }
 
+/* Fit SVG inside circle */
 .platform-icon {
   width: 70%;
   height: 70%;
   object-fit: contain;
-}
-
-.platform {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.platform:hover {
-  color: #2563eb;
 }
