@@ -97,15 +97,20 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .icon-wrapper.fiverr {
-  background-color: #1dbf73; /* Fiverr green */
+  background-color: #1dbf73;
 }
 
 .icon-wrapper.upwork {
-  background-color: #6fda44; /* Upwork green */
+  background-color: #6fda44;
+}
+
+.platform-icon {
+  width: 60%;   /* scales SVG to fit inside circle */
+  height: 60%;
+  object-fit: contain;
 }
 
 .platform-icon {
