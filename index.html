@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Farrukh Amir | Unity Game Developer | Freelance & Multiplayer Specialist</title>
-<meta name="description" content="Farrukh Amir - Unity Game Developer with 7+ years experience. 30+ clients, $50k+ revenue, 5★ rated on Fiverr & Upwork. Mobile, Multiplayer, C# expertise.">
-<meta name="keywords" content="Unity Game Developer, Unity Developer Pakistan, Mobile Game Developer Unity, Multiplayer Game Developer, Unity C# Programmer, Fiverr Unity Developer, Upwork Unity Developer">
+<meta name="description" content="Farrukh Amir - Unity Game Developer with 7+ years experience. 30+ clients, $50k+ revenue, 5★ rated on Fiverr, Upwork & LinkedIn. Mobile, Multiplayer, C# expertise.">
+<meta name="keywords" content="Unity Game Developer, Unity Developer Pakistan, Mobile Game Developer Unity, Multiplayer Game Developer, Unity C# Programmer, Fiverr Unity Developer, Upwork Unity Developer, LinkedIn Unity Developer">
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,7 +20,8 @@
  "url": "https://yourproject.vercel.app",
  "sameAs": [
    "https://www.fiverr.com/farrukh54",
-   "https://www.upwork.com/freelancers/~01e8d55c815050cfb0?mp_source=share"
+   "https://www.upwork.com/freelancers/~01e8d55c815050cfb0?mp_source=share",
+   "https://www.linkedin.com/in/farrukhamir"
  ]
 }
 </script>
@@ -44,8 +45,13 @@
 <!-- HERO -->
 <section class="hero">
   <h1>Unity Game Developer with 30+ Global Clients</h1>
-  <p>$50,000+ Revenue | 5★ Ratings on Fiverr & Upwork | 7+ Years Experience</p>
+  <p>$50,000+ Revenue | 5★ Ratings on Fiverr, Upwork & LinkedIn | 7+ Years Experience</p>
   <a href="#contact" class="btn">Hire Me</a>
+  <div class="hero-links">
+    <a href="https://www.fiverr.com/farrukh54" target="_blank" class="platform"><i class="fab fa-fiverr fa-2x"></i> Fiverr</a>
+    <a href="https://www.upwork.com/freelancers/~01e8d55c815050cfb0?mp_source=share" target="_blank" class="platform"><i class="fab fa-upwork fa-2x"></i> Upwork</a>
+    <a href="https://www.linkedin.com/in/farrukhamir" target="_blank" class="platform"><i class="fab fa-linkedin fa-2x"></i> LinkedIn</a>
+  </div>
 </section>
 
 <!-- ABOUT -->
@@ -82,17 +88,21 @@
 <!-- PLATFORMS -->
 <section class="section fade">
   <h2>Trusted Platforms</h2>
+  <!-- PLATFORMS -->
+<section class="section fade">
+  <h2>Trusted Platforms</h2>
   <div class="platforms">
     <a href="https://www.fiverr.com/farrukh54" target="_blank" class="platform">
       <i class="fab fa-fiverr fa-2x"></i> Fiverr
     </a>
-    <a href="https://www.upwork.com/freelancers/~farrukhamiir" target="_blank" class="platform">
+    <a href="https://www.upwork.com/freelancers/~01e8d55c815050cfb0?mp_source=share" target="_blank" class="platform">
       <i class="fab fa-upwork fa-2x"></i> Upwork
     </a>
-	<a href="https://www.linkedin.com/in/farrukhamir" target="_blank" class="platform">
-    <i class="fab fa-linkedin fa-2x"></i> LinkedIn
-  </a>
+    <a href="https://www.linkedin.com/in/farrukhamir" target="_blank" class="platform">
+      <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+    </a>
   </div>
+</section>
 </section>
 
 <!-- PROJECTS / PORTFOLIO -->
@@ -163,15 +173,15 @@ function animateCounter(id, target, duration) {
   let interval = setInterval(() => {
     count += increment;
     if(count >= target) { count = target; clearInterval(interval); }
-    counter.innerText = Math.floor(count);
     if(id === 'ratings') counter.innerText = (count/10).toFixed(1);
+    else counter.innerText = Math.floor(count);
   }, 50);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   animateCounter('clients', 30, 1500);
   animateCounter('revenue', 50000, 1500);
-  animateCounter('ratings', 50, 1500); // 5.0 rating * 10 for smooth animation
+  animateCounter('ratings', 50, 1500); // 5.0 rating * 10
 });
 </script>
 </body>
