@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Farrukh Amir | Unity Game Developer | Multiplayer & Mobile Specialist</title>
-<meta name="description" content="Farrukh Amir - Professional Unity Game Developer with 7+ years experience. 30+ clients, $50,000+ revenue, 5★ rated on Fiverr & Upwork. Mobile, Multiplayer, C# expertise.">
+<title>Farrukh Amir | Unity Game Developer | Freelance & Multiplayer Specialist</title>
+<meta name="description" content="Farrukh Amir - Unity Game Developer with 7+ years experience. 30+ clients, $50k+ revenue, 5★ rated on Fiverr & Upwork. Mobile, Multiplayer, C# expertise.">
 <meta name="keywords" content="Unity Game Developer, Unity Developer Pakistan, Mobile Game Developer Unity, Multiplayer Game Developer, Unity C# Programmer, Fiverr Unity Developer, Upwork Unity Developer">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <script type="application/ld+json">
 {
@@ -32,9 +33,10 @@
   <div class="logo">Farrukh Amir</div>
   <div class="links">
     <a href="#about">About</a>
-    <a href="#track">Track Record</a>
+    <a href="#stats">Stats</a>
     <a href="#projects">Projects</a>
     <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -58,56 +60,46 @@
   </p>
 </section>
 
-<!-- TRACK RECORD -->
-<section id="track" class="section dark fade">
+<!-- STATS / COUNTERS -->
+<section id="stats" class="section dark fade">
   <h2>Proven Track Record</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>30+ Clients</h3>
-      <p>Successfully delivered Unity projects to global startups and studios.</p>
+  <div class="counters grid">
+    <div class="counter-card">
+      <h3 id="clients">0</h3>
+      <p>Clients Served</p>
     </div>
-    <div class="card">
-      <h3>$50,000+ Revenue</h3>
-      <p>Generated through high-quality Unity game development services.</p>
+    <div class="counter-card">
+      <h3 id="revenue">0</h3>
+      <p>Revenue Generated ($)</p>
     </div>
-    <div class="card">
-      <h3>5★ Ratings</h3>
-      <p>Maintained top ratings on Fiverr and Upwork for reliability and performance.</p>
+    <div class="counter-card">
+      <h3 id="ratings">0</h3>
+      <p>Average Rating ★</p>
     </div>
   </div>
 </section>
 
 <!-- PLATFORMS -->
 <section class="section fade">
-  <h2>Trusted Across Platforms</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Fiverr</h3>
-      <p>Top-rated Unity developer delivering high-performance game systems.</p>
-    </div>
-    <div class="card">
-      <h3>Upwork</h3>
-      <p>5★ client satisfaction across mobile and multiplayer Unity projects.</p>
-    </div>
+  <h2>Trusted Platforms</h2>
+  <div class="platforms">
+    <a href="https://www.fiverr.com/farrukhamiir" target="_blank" class="platform">
+      <i class="fab fa-fiverr fa-2x"></i> Fiverr
+    </a>
+    <a href="https://www.upwork.com/freelancers/~farrukhamiir" target="_blank" class="platform">
+      <i class="fab fa-upwork fa-2x"></i> Upwork
+    </a>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS / PORTFOLIO -->
 <section id="projects" class="section dark fade">
-  <h2>Featured Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Multiplayer Mobile Game</h3>
-      <p>Real-time networking, optimized performance, scalable gameplay architecture.</p>
-    </div>
-    <div class="card">
-      <h3>Hyper Casual Game</h3>
-      <p>Mobile optimized, monetized design, smooth performance & lightweight build.</p>
-    </div>
-    <div class="card">
-      <h3>Custom AI System</h3>
-      <p>Bezier path smoothing, movement logic, and advanced agent systems.</p>
-    </div>
+  <h2>Portfolio Gallery</h2>
+  <div class="grid gallery">
+    <div class="card"><img src="project1.png" alt="Multiplayer Mobile Game"><h3>Multiplayer Mobile Game</h3></div>
+    <div class="card"><img src="project2.png" alt="Hyper Casual Game"><h3>Hyper Casual Game</h3></div>
+    <div class="card"><img src="project3.png" alt="Custom AI System"><h3>Custom AI System</h3></div>
+    <div class="card"><img src="project4.png" alt="Simulation Game"><h3>Simulation Game</h3></div>
   </div>
 </section>
 
@@ -124,11 +116,33 @@
   </div>
 </section>
 
+<!-- BLOG -->
+<section id="blog" class="section dark fade">
+  <h2>Blog & Tutorials</h2>
+  <div class="grid blog-grid">
+    <div class="card">
+      <h3>How to Build Multiplayer Games in Unity</h3>
+      <p>Step-by-step guide on networking, player sync, and optimization.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="card">
+      <h3>Mobile Game Optimization Tips</h3>
+      <p>Boost frame rates and reduce memory usage for Android/iOS.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="card">
+      <h3>Custom AI Pathfinding in Unity</h3>
+      <p>Create smooth agent movement without NavMesh limitations.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
-<section id="contact" class="section dark fade">
+<section id="contact" class="section fade">
   <h2>Contact Me</h2>
-  <p>Email: farrukhamiir@gmail.com</p>
-  <p>Available for freelance & contract work worldwide.</p>
+  <p>Email: <a href="mailto:farrukhamiir@gmail.com">farrukhamiir@gmail.com</a></p>
+  <p>Available worldwide for freelance & contract work.</p>
 </section>
 
 <!-- FOOTER -->
@@ -137,5 +151,25 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+// COUNTER ANIMATION
+function animateCounter(id, target, duration) {
+  let counter = document.getElementById(id);
+  let count = 0;
+  let increment = target / (duration / 50);
+  let interval = setInterval(() => {
+    count += increment;
+    if(count >= target) { count = target; clearInterval(interval); }
+    counter.innerText = Math.floor(count);
+    if(id === 'ratings') counter.innerText = (count/10).toFixed(1);
+  }, 50);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  animateCounter('clients', 30, 1500);
+  animateCounter('revenue', 50000, 1500);
+  animateCounter('ratings', 50, 1500); // 5.0 rating * 10 for smooth animation
+});
+</script>
 </body>
 </html>
