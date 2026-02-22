@@ -191,3 +191,9 @@ footer {
 .blog-grid a:hover {
   text-decoration: underline;
 }
+.platform-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
