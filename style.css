@@ -7,10 +7,12 @@ body {
   scroll-behavior: smooth;
 }
 
+/* --- NAVBAR --- */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
+  align-items: center;
+  padding: 15px 10%;
   background: #0f172a;
   position: sticky;
   top: 0;
@@ -42,33 +44,7 @@ nav a:hover {
   color: #2563eb;
 }
 
-/* --- HERO --- */
-
-/* Hero header: picture + name */
-.hero-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-/* Hero picture */
-.hero-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-}
-
-/* Hero name */
-.hero-header h1 {
-  font-size: 48px;
-  margin: 0;
-  color: white;
-  text-align: center;
-}
+/* --- HERO SECTION --- */
 .hero {
   position: relative;
   text-align: center;
@@ -79,14 +55,13 @@ nav a:hover {
   justify-content: center;
   gap: 20px;
 
-  /* HD Background + Gradient Overlay */
+  /* HD background image + gradient overlay */
   background: linear-gradient(135deg, rgba(37,99,235,0.6), rgba(124,58,237,0.6)),
               url('assets/hero-bg.jpg') no-repeat center center;
   background-size: cover;
   color: white;
 }
 
-/* Optional overlay for extra readability */
 .hero::before {
   content: "";
   position: absolute;
@@ -100,7 +75,6 @@ nav a:hover {
   z-index: 1; /* keep text above overlay */
 }
 
-/* Hero text */
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -108,7 +82,6 @@ nav a:hover {
 
 .hero p {
   font-size: 20px;
-}
 }
 
 .btn {
@@ -127,7 +100,7 @@ nav a:hover {
   color: white;
 }
 
-/* HERO LINKS */
+/* --- HERO LINKS (Fiverr, Upwork, LinkedIn) --- */
 .hero-links {
   display: flex;
   justify-content: center;
@@ -151,6 +124,7 @@ nav a:hover {
   color: #ffeb3b;
 }
 
+/* Circular icon wrapper */
 .icon-wrapper {
   width: 50px;
   height: 50px;
@@ -170,19 +144,8 @@ nav a:hover {
 }
 
 .platform-icon {
-  width: 60%;   /* scales SVG to fit inside circle */
-  height: 60%;
-  object-fit: contain;
-}
-
-.platform-icon {
   width: 60%;
   height: 60%;
-}
-
-.platform-icon {
-  width: 70%;
-  height: 70%;
   object-fit: contain;
 }
 
