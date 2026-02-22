@@ -33,6 +33,11 @@ nav a:hover {
   text-align: center;
   padding: 120px 20px;
   background: linear-gradient(135deg, #2563eb, #7c3aed);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .hero h1 {
@@ -58,6 +63,54 @@ nav a:hover {
 .btn:hover {
   background: #2563eb;
   color: white;
+}
+
+/* HERO LINKS */
+.hero-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.platform:hover {
+  color: #ffeb3b;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.icon-wrapper.fiverr {
+  background-color: #1dbf73;
+}
+
+.icon-wrapper.upwork {
+  background-color: #6fda44;
+}
+
+.platform-icon {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 /* --- SECTIONS --- */
@@ -140,29 +193,6 @@ footer {
   margin-top: 10px;
 }
 
-/* --- PLATFORM LINKS --- */
-.platforms {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.platform {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.platform:hover {
-  color: #2563eb;
-}
-
 /* --- GALLERY --- */
 .gallery img {
   width: 100%;
@@ -190,106 +220,4 @@ footer {
 
 .blog-grid a:hover {
   text-decoration: underline;
-}
-..platforms {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.platform {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.platform:hover {
-  color: #2563eb;
-}
-
-/* SVG wrapper ensures correct aspect ratio and circle */
-.icon-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  background-color: transparent; /* optional: white circle if needed */
-  border-radius: 50%; /* makes it circular */
-  overflow: hidden;
-}
-
-.platform-icon {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* ensures entire logo fits */
-}
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.hero-links {
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
-  gap: 20px;               /* spacing between icons */
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.platform {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.platform:hover {
-  color: #ffeb3b; /* hover color */
-}
-
-/* Circular icon wrapper for Fiverr & Upwork */
-.icon-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-/* Fiverr green circle */
-.icon-wrapper.fiverr {
-  background-color: #1dbf73;
-}
-
-/* Upwork green circle */
-.icon-wrapper.upwork {
-  background-color: #6fda44;
-}
-
-/* Fit SVG inside circle */
-.platform-icon {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
 }
