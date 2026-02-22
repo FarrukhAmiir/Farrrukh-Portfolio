@@ -232,3 +232,48 @@ footer {
   height: 100%;
   object-fit: contain; /* ensures entire logo fits */
 }
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.icon-wrapper.fiverr {
+  background-color: #1dbf73; /* Fiverr green circle */
+}
+
+.icon-wrapper.upwork {
+  background-color: #6fda44; /* Upwork green circle */
+}
+
+.platform-icon {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.platform {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.platform:hover {
+  color: #2563eb;
+}
