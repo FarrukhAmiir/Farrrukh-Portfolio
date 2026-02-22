@@ -17,6 +17,20 @@ nav {
   z-index: 100;
 }
 
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
 nav a {
   color: white;
   text-decoration: none;
