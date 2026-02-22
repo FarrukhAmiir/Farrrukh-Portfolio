@@ -29,6 +29,7 @@ nav a:hover {
 }
 
 /* --- HERO --- */
+
 .hero {
   position: relative;
   text-align: center;
@@ -38,15 +39,29 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  
-  /* Background Image */
-  background: linear-gradient(135deg, rgba(37,99,235,0.6), rgba(124,58,237,0.6)), 
+
+  /* HD Background + Gradient Overlay */
+  background: linear-gradient(135deg, rgba(37,99,235,0.6), rgba(124,58,237,0.6)),
               url('assets/hero-bg.jpg') no-repeat center center;
   background-size: cover;
-
   color: white;
 }
 
+/* Optional overlay for extra readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1; /* keep text above overlay */
+}
+
+/* Hero text */
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -54,6 +69,7 @@ nav a:hover {
 
 .hero p {
   font-size: 20px;
+}
 }
 
 .btn {
